@@ -1,0 +1,27 @@
+{
+  "name": "confetti-rain",
+  "version": "1.0.0",
+  "description": "Confetti raining from the sky",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrecisionNutrition/confetti-rain.git"
+  },
+  "keywords": [
+    "browser",
+    "confetti"
+  ],
+  "author": [
+    { "name": "James Herdman" },
+    { "name": "Santiago Ferreira" }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PrecisionNutrition/confetti-rain/issues"
+  },
+  "homepage": "https://github.com/PrecisionNutrition/confetti-rain#readme",
+  "type": "module"
+}
