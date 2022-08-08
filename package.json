@@ -1,6 +1,6 @@
 {
   "name": "confetti-rain",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Confetti raining from the sky",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "browser",
     "confetti"
   ],
-  "author": [
+  "authors": [
     { "name": "James Herdman" },
     { "name": "Santiago Ferreira" }
   ],
