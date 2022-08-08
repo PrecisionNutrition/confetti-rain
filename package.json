@@ -23,5 +23,6 @@
     "url": "https://github.com/PrecisionNutrition/confetti-rain/issues"
   },
   "homepage": "https://github.com/PrecisionNutrition/confetti-rain#readme",
-  "type": "module"
+  "type": "module",
+  "types": "./index.d.ts"
 }

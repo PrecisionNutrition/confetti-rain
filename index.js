@@ -46,8 +46,22 @@ export default class ConfettiRain {
     this._animationLoop();
   }
 
+  stop() {
+    for (let index = 0; index < this.particles.length; index++) {
+      const particle = this.particles[index];
+
+      if (!particle.isDead) {
+        this._killParticle(index);
+      }
+    }
+  }
+
   get livingParticles() {
-    return this.particles.length > 0 && this.particles.filter((particle) => !particle.isDead);
+    if (this.particles.length > 0) {
+      return this.particles.filter((particle) => !particle.isDead);
+    } else {
+      return [];
+    }
   }
 
   get areAllParticlesDead() {
