@@ -40,13 +40,19 @@ export default class ConfettiRain {
   angle = 0;
   tiltAngle = 0;
 
+  /**
+   * MAKE IT RAIN!
+   */
   start() {
     this._initializeCanvas();
     this._initializeParticles();
     this._animationLoop();
   }
 
-  stop() {
+  /**
+   * Pause all confetti. This effectively "kills" all particles.
+   */
+  pause() {
     for (let index = 0; index < this.particles.length; index++) {
       const particle = this.particles[index];
 
@@ -54,6 +60,14 @@ export default class ConfettiRain {
         this._killParticle(index);
       }
     }
+  }
+
+  /**
+   * Stop all confetti, remove it from the DOM
+   */
+  uninstall() {
+    this.pause();
+    this.canvas.remove();
   }
 
   get livingParticles() {

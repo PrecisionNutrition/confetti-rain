@@ -1,7 +1,8 @@
 declare module 'confetti-rain' {
   class ConfettiRain {
     start(): void;
-    stop(): void;
+    pause(): void;
+    uninstall(): void;
 
     areAllParticlesDead: boolean;
     livingParticles: ConfettiParticle[];
